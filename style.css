@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {    
+    
+}
+
+h1, h2, h3 {
+    color: #FFEBC6;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);    
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0)), url(/images/IMG_6687.jpg);
+    width: 1977px;
+    height: 930px;
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+    padding: 130px;
+}
+
+.inner-title h1 {
+    font-size: 80px;
+    font-family: Arial;
+    letter-spacing: 4px;
+}
+
+.tag-line {
+    padding-top: 20px;
+}
+
+.tag-line h2 {
+    font-family: Verdana;
+    font-size: 40px;
+}
+
+.tag-line h3 {
+    font-family: Verdana;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.links {
+    display: flex;
+    width: 300px;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.links a {
+    color: #FFEAC2;
+    opacity: 1;
+    font-size: 35px;
+}
+
+.links a:hover {
+    opacity: 0.2;
+    text-shadow: 0 0 3px #000;
+}
+
