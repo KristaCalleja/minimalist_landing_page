@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-body {    
-    
-}
-
 h1, h2, h3 {
     color: #FFEBC6;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);    
@@ -14,11 +10,13 @@ h1, h2, h3 {
 
 .banner {
     background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0)), url(/images/IMG_6687.jpg);
-    width: 1977px;
+    max-width: 1910px;
     height: 930px;
     background-repeat: no-repeat;
     background-position: 0% 30%;
     padding: 130px;
+    object-fit: none;
+    object-position: 50% 50%;
 }
 
 .inner-title h1 {
@@ -60,3 +58,42 @@ h1, h2, h3 {
     text-shadow: 0 0 3px #000;
 }
 
+/* Large devices laptops/desktops */
+@media(max-width: 1200px) {
+    .banner {
+    }
+}
+
+/* Medium devices (laptops, landscape tablets) */
+@media(max-width: 992px) {
+    .banner {
+        width: 960px;
+        height: 540px;
+        background-position: 17% 24%;
+        object-position: 50% 120%;
+    }
+}
+
+/* Small devices (large phones) */
+/* @media(min-width: 600px) {
+    .banner {
+        width: 500px;
+        height: 900px;
+    }
+} */
+
+/* Extra small devices  */
+@media(max-width: 600px) {
+    .banner {
+        width: 400px;
+        height: 700px;
+        object-position: 0 150%;
+        padding: 10px;
+    }
+   .inner-title h1, h3 {
+        font-size: 12px;
+    }
+    .tag-line h2 {
+        font-size: 12px;
+    }
+}
