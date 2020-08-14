@@ -1,42 +1,40 @@
 * {
-    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3 {
-    color: #FFEBC6;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);    
+body {
+    margin: 0;
+    font-family: Verdana;
+    color: #FFEBC6; 
 }
 
 .banner {
     background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0)), url(/images/IMG_6687.jpg);
-    max-width: 1910px;
-    height: 930px;
-    background-repeat: no-repeat;
-    background-position: 0% 30%;
-    padding: 130px;
-    object-fit: none;
-    object-position: 50% 50%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;  
+    padding: 90px;    
 }
 
-.inner-title h1 {
-    font-size: 80px;
-    font-family: Arial;
+.banner h1 {
+    font-size: 64px;
+    font-family: Helvetica;
     letter-spacing: 4px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
 }
 
-.tag-line {
-    padding-top: 20px;
+.banner h2 {
+    font-size: 32px;
 }
 
-.tag-line h2 {
-    font-family: Verdana;
-    font-size: 40px;
-}
-
-.tag-line h3 {
-    font-family: Verdana;
-    font-size: 20px;
+.banner h3 {
+    font-size: 16px;
     padding-top: 20px;
 }
 
@@ -50,50 +48,27 @@ h1, h2, h3 {
 .links a {
     color: #FFEAC2;
     opacity: 1;
-    font-size: 35px;
+    font-size: 20px;
+    border: #CC8500 1px solid;
+    border-radius: 3px;
+    padding: 4px 10px;
+    background: #CC8500;
 }
 
 .links a:hover {
-    opacity: 0.2;
+    color: #CC8500;
+    background: #FFEAC2;
     text-shadow: 0 0 3px #000;
 }
 
-/* Large devices laptops/desktops */
-@media(max-width: 1200px) {
-    .banner {
-    }
-}
-
-/* Medium devices (laptops, landscape tablets) */
-@media(max-width: 992px) {
-    .banner {
-        width: 960px;
-        height: 540px;
-        background-position: 17% 24%;
-        object-position: 50% 120%;
-    }
-}
-
-/* Small devices (large phones) */
-/* @media(min-width: 600px) {
-    .banner {
-        width: 500px;
-        height: 900px;
-    }
-} */
-
 /* Extra small devices  */
 @media(max-width: 600px) {
+    .banner h1, h2, h3 {
+        font-size: 16px;
+    }
     .banner {
-        width: 400px;
-        height: 700px;
-        object-position: 0 150%;
-        padding: 10px;
-    }
-   .inner-title h1, h3 {
-        font-size: 12px;
-    }
-    .tag-line h2 {
-        font-size: 12px;
+        padding-top: 350px;
+        justify-content: center;
+        align-items: center;
     }
 }
